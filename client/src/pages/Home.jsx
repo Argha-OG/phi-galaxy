@@ -1,12 +1,20 @@
 import React from 'react'
-import Hero from '../sections/Hero'
+import Header from '../components/Header'
+import Hero from '../sections/Hero';
+import Footer from '../components/Footer';
+import MainLayout from '../Layout/MainLayout';
+import Aboutus from '../sections/Aboutus';
+
 
 const Home = () => {
   return (
-    <div className='content-center text-center items-center'>
-      <Hero /> 
+    <MainLayout>
+    <div>
+        <Hero />
+        <Aboutus />
     </div>
-  )
+    </MainLayout>
+  );
 }
 
 export default Home
