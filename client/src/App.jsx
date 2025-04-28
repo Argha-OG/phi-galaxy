@@ -1,10 +1,12 @@
 import './App.css'
+import Router from './router/Router'
+
 
 function App() {
 
   return (
     <>
-      <h1>Hello Phi Galaxy</h1>
+      <Router />
     </>
   )
 }
