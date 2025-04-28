@@ -3,16 +3,18 @@ import Header from '../components/Header'
 import Hero from '../sections/Hero';
 import Footer from '../components/Footer';
 import MainLayout from '../Layout/MainLayout';
-import Aboutus from '../sections/Aboutus';
+import HAboutus from '../sections/HAboutus';
+import HServices from '../sections/HServices';
 
 
 const Home = () => {
   return (
     <MainLayout>
-    <div>
+      <div>
         <Hero />
-        <Aboutus />
-    </div>
+        <HAboutus />
+        <HServices />
+      </div>
     </MainLayout>
   );
 }
