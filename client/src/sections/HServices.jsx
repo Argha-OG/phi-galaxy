@@ -1,6 +1,10 @@
-import React from "react";
-import MainLayout from "../Layout/MainLayout";
+import React, { useState, useEffect, useRef } from "react";
 import BackImg from "./../assets/hserviceback.png";
+import Im1 from "./../assets/im1.png";
+import Im2 from "./../assets/im2.png";
+import Im3 from "./../assets/im3.png";
+import Im4 from "./../assets/im4.png";
+import Im5 from "./../assets/im5.png";
 
 const HServices = () => {
   return (
@@ -12,23 +16,7 @@ const HServices = () => {
             <strong className="text-indigo-600"> Service </strong>
             in
           </h1>
-
-
-          <div className="mt-4 flex justify-center gap-4 sm:mt-6">
-            <a
-              className="inline-block rounded border border-indigo-600 bg-indigo-600 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-indigo-700"
-              href="#"
-            >
-              Get Started
-            </a>
-
-            <a
-              className="inline-block rounded border border-gray-200 px-5 py-3 font-medium text-gray-700 shadow-sm transition-colors hover:bg-gray-50 hover:text-gray-900 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:text-white"
-              href="#"
-            >
-              Learn More
-            </a>
-          </div>
+          
         </div>
       </div>
     </div>
