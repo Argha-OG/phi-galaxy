@@ -1,10 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import BackImg from "./../assets/hserviceback.png";
-import Im1 from "./../assets/im1.png";
-import Im2 from "./../assets/im2.png";
-import Im3 from "./../assets/im3.png";
-import Im4 from "./../assets/im4.png";
-import Im5 from "./../assets/im5.png";
+import HCaro from "../components/carousel/HCaro";
 
 const HServices = () => {
   return (
@@ -16,6 +12,7 @@ const HServices = () => {
             <strong className="text-indigo-600"> Service </strong>
             in
           </h1>
+          <HCaro />
           
         </div>
       </div>
