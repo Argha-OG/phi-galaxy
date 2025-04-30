@@ -1,14 +1,11 @@
 import React from "react";
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+import MainLayout from "../../Layout/MainLayout";
 
 const Services = () => {
   return (
-    <div className="h-auto bg-gray-700">
-      <Header />
+    <MainLayout>
       <h1>Serives</h1>
-      <Footer />
-    </div>
+      </ MainLayout>
   );
 };
 
