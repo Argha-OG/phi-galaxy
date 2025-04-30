@@ -1,6 +1,6 @@
-import React from 'react'
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import React from "react";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 
 const Blog = () => {
   return (
@@ -12,6 +12,6 @@ const Blog = () => {
       <Footer />
     </div>
   );
-}
+};
 
-export default Blog
+export default Blog;

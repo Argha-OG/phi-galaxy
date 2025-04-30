@@ -2,14 +2,14 @@ import React from "react";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
-function MainLayout({ children }) {
+const Services = () => {
   return (
-    <div className="bg-black">
+    <div className="h-auto bg-gray-700">
       <Header />
-      <div>{children}</div>
+      <h1>Serives</h1>
       <Footer />
     </div>
   );
-}
+};
 
-export default MainLayout;
+export default Services;

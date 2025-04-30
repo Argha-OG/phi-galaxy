@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroImg from './../assets/biglogohere.png'
+import HeroImg from './../../assets/biglogohere.png'
 
 const Footer = () => {
   return (

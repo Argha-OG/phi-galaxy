@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroImg from './../assets/biglogohere.png'
+import HeroImg from './../../assets/biglogohere.png'
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -8,7 +8,7 @@ const Header = () => {
       <div className="mx-auto container px-4 sm:px-6 lg:px-8 ">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">
-            <Link className="block" to="#">
+            <Link className="block" to="/">
               <span className="sr-only">Home</span>
               <img className="h-16 w-auto" src={HeroImg} alt="" />
             </Link>

@@ -1,6 +1,6 @@
-import React from 'react'
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import React from "react";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 
 const ContactUs = () => {
   return (
@@ -12,6 +12,6 @@ const ContactUs = () => {
       <Footer />
     </div>
   );
-}
+};
 
-export default ContactUs
+export default ContactUs;
