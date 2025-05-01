@@ -9,12 +9,11 @@ const HServices = () => {
         <div className="mx-auto max-w-prose text-center">
           <h1 className="text-2xl font-bold text-gray-900 sm:text-4xl dark:text-white">
             We Provide Best
-            <strong className="text-indigo-600"> Service </strong>
+            <strong className="text-purple-700"> Service </strong>
             in
           </h1>
-          <HCaro />
-          
         </div>
+        <HCaro />
       </div>
     </div>
   );
