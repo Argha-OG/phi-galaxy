@@ -3,6 +3,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import "swiper/css/autoplay";
 import './caroCard.css';
 
 import im1 from './../../assets/caro/appdev.gif'
@@ -13,32 +14,35 @@ import im5 from "./../../assets/caro/uidev.gif";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide,  } from 'swiper/react';
-import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
+import {Autoplay, EffectCoverflow, Pagination,  } from "swiper/modules";
 
 // Import Swiper styles
 import 'swiper/css';
 
+
+
 const HCaro = () => {
   return (
     <Swiper
-      autoplay={{
-        delay: 1500,
-        disableOnInteraction: false,
-      }}
+      modules={[EffectCoverflow, Pagination, Autoplay]}
       effect={"coverflow"}
+      autoplay= {{
+        delay: 3000
+      }}
       grabCursor={true}
       centeredSlides={true}
       loop="true"
-      slidesPerView="3"
+      slidesPerView= "3"
       coverflowEffect={{
         rotate: 0,
         stretch: 0,
-        depth: 150,
-        modifier: 2.5,
+        depth: 160,
+        modifier: 2.6,
         slideShadows: true,
+        
       }}
       // pagination={true}
-      modules={[EffectCoverflow, Pagination]}
+      
       className="mySwiper"
     >
       <SwiperSlide>
@@ -109,10 +113,10 @@ const HCaro = () => {
 
             <div className="my-3 ml-3">
               <span class="rounded-full mr-2  bg-white px-2.5 py-0.5 text-sm whitespace-nowrap text-purple-700">
-                Java
+                Figma
               </span>
               <span class="rounded-full mr-2  bg-white px-2.5 py-0.5 text-sm whitespace-nowrap text-purple-700">
-                FireBase
+                Adobe AI
               </span>
               <h1 className="text-2xl mt-3 text-white">
                 UI/UX & Graphics Design
