@@ -33,7 +33,7 @@ const HTeam = () => {
           <div className="md:col-span-7"></div>
         </div>
         <div>
-            <TeamCaro></TeamCaro>
+            <TeamCaro />
         </div>
       </div>
     </section>
