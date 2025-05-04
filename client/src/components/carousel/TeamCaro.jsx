@@ -5,7 +5,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 import "./caroCard.css";
-import ima1 from "./../../assets/caro/ima1.png"
+import ima1 from "./../../assets/caro/ima1.png";
 
 import im1 from "./../../assets/caro/appdev.gif";
 import im2 from "./../../assets/caro/aidev.gif";
@@ -25,13 +25,13 @@ const TeamCaro = () => {
     <Swiper
       modules={[EffectCoverflow, Pagination, Autoplay]}
       effect={"coverflow"}
-        autoplay={{
-          delay: 3000,
-        }}
+      // autoplay={{
+      //   delay: 3000,
+      // }}
       grabCursor={true}
       centeredSlides={true}
       loop="true"
-      slidesPerView="5"
+      slidesPerView="3"
       coverflowEffect={{
         rotate: 0,
         stretch: 0,
@@ -44,14 +44,11 @@ const TeamCaro = () => {
       className="mySwiper"
     >
       <SwiperSlide>
-        <div className="">
-            
-            <div className="h-46 rounded-[64px] mt-44 border-t-8 border-purple-700 shadow-2xl shadow-black bg-amber-50">
-                <div className="">
-
-                </div>
-                <img src={ima1} className="rounded-[64px] pb-14" alt="" />
-            </div>
+        <div className="static h-auto">
+          <img src={ima1} className="block top-0 rounded-[64px]" alt="" />
+          <div className="">
+            <div className="block h-46 rounded-[64px] border-t-8 border-purple-700 shadow-2xl shadow-black bg-amber-50"></div>
+          </div>
         </div>
       </SwiperSlide>
     </Swiper>
