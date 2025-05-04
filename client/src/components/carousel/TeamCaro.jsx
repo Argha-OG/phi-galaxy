@@ -23,11 +23,12 @@ import "swiper/css";
 const TeamCaro = () => {
   return (
     <Swiper
+      spaceBetween={50}
       modules={[EffectCoverflow, Pagination, Autoplay]}
       effect={"coverflow"}
-      // autoplay={{
-      //   delay: 3000,
-      // }}
+      autoplay={{
+        delay: 3000,
+      }}
       grabCursor={true}
       centeredSlides={true}
       loop="true"
@@ -35,7 +36,7 @@ const TeamCaro = () => {
       coverflowEffect={{
         rotate: 0,
         stretch: 0,
-        depth: 160,
+        depth: 0,
         modifier: 2.6,
         slideShadows: true,
       }}
@@ -44,12 +45,179 @@ const TeamCaro = () => {
       className="mySwiper"
     >
       <SwiperSlide>
-        <div className="static h-auto">
-          <img src={ima1} className="block top-0 rounded-[64px]" alt="" />
-          <div className="">
-            <div className="block h-46 rounded-[64px] border-t-8 border-purple-700 shadow-2xl shadow-black bg-amber-50"></div>
+        <a href="#" className="group relative block bg-black rounded-4xl">
+          <img
+            alt=""
+            src={ima1}
+            className="absolute inset-0 h-full rounded-4xl object-cover transition-opacity group-hover:opacity-50"
+          />
+
+          <div className="relative p-4 sm:p-6 lg:p-8">
+            <div className="mt-32 sm:mt-48 lg:mt-64">
+              <p className="text-sm font-medium tracking-widest text-pink-500 uppercase">
+                Graphic and UI designer
+              </p>
+
+              <p className="text-xl font-bold text-white sm:text-2xl">
+                Sheikh Mhafuz
+              </p>
+            </div>
           </div>
-        </div>
+        </a>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <a href="#" className="group relative block bg-black rounded-4xl">
+          <img
+            alt=""
+            src={ima1}
+            className="absolute inset-0 h-full rounded-4xl object-cover transition-opacity group-hover:opacity-50"
+          />
+
+          <div className="relative p-4 sm:p-6 lg:p-8">
+            <div className="mt-32 sm:mt-48 lg:mt-64">
+              <p className="text-sm font-medium tracking-widest text-pink-500 uppercase">
+                Graphic and UI designer
+              </p>
+
+              <p className="text-xl font-bold text-white sm:text-2xl">
+                Sheikh Mhafuz
+              </p>
+            </div>
+          </div>
+        </a>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <a href="#" className="group relative block bg-black rounded-4xl">
+          <img
+            alt=""
+            src={ima1}
+            className="absolute inset-0 h-full rounded-4xl object-cover transition-opacity group-hover:opacity-50"
+          />
+
+          <div className="relative p-4 sm:p-6 lg:p-8">
+            <div className="mt-32 sm:mt-48 lg:mt-64">
+              <p className="text-sm font-medium tracking-widest text-pink-500 uppercase">
+                Graphic and UI designer
+              </p>
+
+              <p className="text-xl font-bold text-white sm:text-2xl">
+                Sheikh Mhafuz
+              </p>
+            </div>
+          </div>
+        </a>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <a href="#" className="group relative block bg-black rounded-4xl">
+          <img
+            alt=""
+            src={ima1}
+            className="absolute inset-0 h-full rounded-4xl object-cover transition-opacity group-hover:opacity-50"
+          />
+
+          <div className="relative p-4 sm:p-6 lg:p-8">
+            <div className="mt-32 sm:mt-48 lg:mt-64">
+              <p className="text-sm font-medium tracking-widest text-pink-500 uppercase">
+                Graphic and UI designer
+              </p>
+
+              <p className="text-xl font-bold text-white sm:text-2xl">
+                Sheikh Mhafuz
+              </p>
+            </div>
+          </div>
+        </a>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <a href="#" className="group relative block bg-black rounded-4xl">
+          <img
+            alt=""
+            src={ima1}
+            className="absolute inset-0 h-full rounded-4xl object-cover transition-opacity group-hover:opacity-50"
+          />
+
+          <div className="relative p-4 sm:p-6 lg:p-8">
+            <div className="mt-32 sm:mt-48 lg:mt-64">
+              <p className="text-sm font-medium tracking-widest text-pink-500 uppercase">
+                Graphic and UI designer
+              </p>
+
+              <p className="text-xl font-bold text-white sm:text-2xl">
+                Sheikh Mhafuz
+              </p>
+            </div>
+          </div>
+        </a>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <a href="#" className="group relative block bg-black rounded-4xl">
+          <img
+            alt=""
+            src={ima1}
+            className="absolute inset-0 h-full rounded-4xl object-cover transition-opacity group-hover:opacity-50"
+          />
+
+          <div className="relative p-4 sm:p-6 lg:p-8">
+            <div className="mt-32 sm:mt-48 lg:mt-64">
+              <p className="text-sm font-medium tracking-widest text-pink-500 uppercase">
+                Graphic and UI designer
+              </p>
+
+              <p className="text-xl font-bold text-white sm:text-2xl">
+                Sheikh Mhafuz
+              </p>
+            </div>
+          </div>
+        </a>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <a href="#" className="group relative block bg-black rounded-4xl">
+          <img
+            alt=""
+            src={ima1}
+            className="absolute inset-0 h-full rounded-4xl object-cover transition-opacity group-hover:opacity-50"
+          />
+
+          <div className="relative p-4 sm:p-6 lg:p-8">
+            <div className="mt-32 sm:mt-48 lg:mt-64">
+              <p className="text-sm font-medium tracking-widest text-pink-500 uppercase">
+                Graphic and UI designer
+              </p>
+
+              <p className="text-xl font-bold text-white sm:text-2xl">
+                Sheikh Mhafuz
+              </p>
+            </div>
+          </div>
+        </a>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <a href="#" className="group relative block bg-black rounded-4xl">
+          <img
+            alt=""
+            src={ima1}
+            className="absolute inset-0 h-full rounded-4xl object-cover transition-opacity group-hover:opacity-50"
+          />
+
+          <div className="relative p-4 sm:p-6 lg:p-8">
+            <div className="mt-32 sm:mt-48 lg:mt-64">
+              <p className="text-sm font-medium tracking-widest text-pink-500 uppercase">
+                Graphic and UI designer
+              </p>
+
+              <p className="text-xl font-bold text-white sm:text-2xl">
+                Sheikh Mhafuz
+              </p>
+            </div>
+          </div>
+        </a>
       </SwiperSlide>
     </Swiper>
   );
