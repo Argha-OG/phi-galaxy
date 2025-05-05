@@ -17,6 +17,7 @@ import ima7 from "./../../assets/team/ritu.jpeg";
 import ima8 from "./../../assets/team/tanoy.jpg";
 import ima9 from "./../../assets/team/rafi.jpg";
 import ima10 from "./../../assets/team/pronway.png";
+import ima11 from "./../../assets/team/jannati.webp";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -198,18 +199,114 @@ const TeamCaro = () => {
           <div className="group relative block bg-white rounded-4xl align-middle">
             <img
               alt=""
-              src={ima6}
+              src={ima7}
               className="absolute h-full w-full rounded-4xl object-cover transition-opacity"
             />
 
             <div className="relative p-4 sm:p-6 lg:p-8">
               <div className="mt-32 sm:mt-48 lg:mt-64">
                 <p className=" font-medium tracking-widest text-pink-500 text-lg uppercase">
-                  MERN WEB APP DEVELOPER
+                  Graphic and UI designer
                 </p>
 
                 <p className="text-xl font-bold text-white text-shadow-black text-shadow-lg/30 sm:text-2xl">
-                  Ratul Islam
+                  Ritu Rani Saha
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <a href="#" className="">
+          <div className="group relative block bg-white rounded-4xl align-middle">
+            <img
+              alt=""
+              src={ima8}
+              className="absolute h-full w-full rounded-4xl object-cover transition-opacity"
+            />
+
+            <div className="relative p-4 sm:p-6 lg:p-8">
+              <div className="mt-32 sm:mt-48 lg:mt-64">
+                <p className=" font-medium tracking-widest text-pink-500 text-lg uppercase">
+                  IoT Engineer
+                </p>
+
+                <p className="text-lg font-bold text-white text-shadow-black text-shadow-lg/30 sm:text-2xl">
+                  MD. Tanoy
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <a href="#" className="">
+          <div className="group relative block bg-white rounded-4xl align-middle">
+            <img
+              alt=""
+              src={ima9}
+              className="absolute h-full w-full rounded-4xl object-cover transition-opacity"
+            />
+
+            <div className="relative p-4 sm:p-6 lg:p-8">
+              <div className="mt-32 sm:mt-48 lg:mt-64">
+                <p className=" font-medium tracking-widest text-pink-500 text-lg uppercase">
+                  Team Manager
+                </p>
+
+                <p className="text-xl font-bold text-white text-shadow-black text-shadow-lg/30 sm:text-2xl">
+                  MD. Ruhul Amin Rafi
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <a href="#" className="">
+          <div className="group relative block bg-white rounded-4xl align-middle">
+            <img
+              alt=""
+              src={ima10}
+              className="absolute h-full w-full rounded-4xl object-cover transition-opacity"
+            />
+
+            <div className="relative p-4 sm:p-6 lg:p-8">
+              <div className="mt-32 sm:mt-48 lg:mt-64">
+                <p className=" font-medium tracking-widest text-pink-500 text-lg uppercase">
+                  Video Editor, UI Designer
+                </p>
+
+                <p className="text-xl font-bold text-white text-shadow-black text-shadow-lg/30 sm:text-2xl">
+                  MD. Ruhul Amin Rafi
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <a href="#" className="">
+          <div className="group relative block bg-white rounded-4xl align-middle">
+            <img
+              alt=""
+              src={ima11}
+              className="absolute h-full w-full rounded-4xl object-cover transition-opacity"
+            />
+
+            <div className="relative p-4 sm:p-6 lg:p-8">
+              <div className="mt-32 sm:mt-48 lg:mt-64">
+                <p className=" font-medium tracking-widest text-pink-500 text-lg uppercase">
+                  Graphic AND UI Designer
+                </p>
+
+                <p className="text-xl font-bold text-white text-shadow-black text-shadow-lg/30 sm:text-2xl">
+                  Jannati
                 </p>
               </div>
             </div>
