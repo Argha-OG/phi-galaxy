@@ -4,6 +4,7 @@ import MainLayout from "../../Layout/MainLayout";
 import HAboutus from "../../sections/HAboutus";
 import HServices from "../../sections/HServices";
 import HTeam from "../../sections/HTeam";
+import HContact from "../../sections/HContact";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <HAboutus />
         <HServices />
         <HTeam />
+        <HContact />
       </div>
     </MainLayout>
   );

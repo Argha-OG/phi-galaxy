@@ -6,7 +6,7 @@ import TeamCaro from '../components/carousel/TeamCaro';
 const HTeam = () => {
   return (
     <section className="bg-white">
-      <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-screen-xl px-4 py-20 pb-40 sm:px-6 lg:px-8">
         <div className="flex place-content-evenly my-16">
           <div className="">
             <div className="max-w-lg md:max-w-none ">
