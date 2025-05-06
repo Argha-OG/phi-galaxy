@@ -10,7 +10,7 @@ const HContact = () => {
         backgroundImage: `url(${Hconback})`,
       }}
     >
-      <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-32">
+      <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-18 lg:px-8 lg:py-18">
         <div className="grid grid-cols-7 gap-4 content-center items-center my-16">
           <div className="col-span-4">
             <div className="max-w-lg md:max-w-none ml-18">
@@ -21,8 +21,8 @@ const HContact = () => {
                 Get In Touch
               </h2>
             </div>
-            <div className="flex flex-col items-center justify-center dark">
-              <div className="w-full max-w-md bg-[#635AD9] rounded-lg shadow-md p-6 m-6">
+            <div className="flex flex-col items-center justify-center pt-10 dark">
+              <div className="w-full max-w-md bg-[#635AD9] rounded-lg shadow-md p-6 m-6 ">
                 <h2 className="text-2xl font-bold text-white mb-4">
                   How May We Help You !
                 </h2>
@@ -76,10 +76,9 @@ const HContact = () => {
           <div className="col-span-1"></div>
 
           <div className="col-span-1 bottom-0">
-            <img src={EarthCom} alt="" className="h-44 w-auto align-bottom" />
+            <img src={EarthCom} alt="" className=" w-auto align-bottom pt-48" />
           </div>
 
-          <div className="col-span-1"></div>
         </div>
       </div>
     </div>
