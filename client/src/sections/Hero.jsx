@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, Suspense } from "react";
-import { createRoot } from "react-dom/client";
+import { createRoot, } from "react-dom/client";
 
 import "./../components/earth/earth.css";
 
@@ -29,7 +29,7 @@ const Hero = () => {
         <div>
           <a
             className="group inline-block rounded-full bg-gradient-to-r from-purple-700 to-blue-500 p-[2px] hover:text-white focus:outline-hidden"
-            href="/home"
+            href="/"
           >
             <span className="block text-[16px] text-white bg-black rounded-full px-5 py-1 font-medium group-hover:bg-transparent transition duration-300">
               Start A Project
@@ -42,7 +42,8 @@ const Hero = () => {
         style={{ width: `auto`, height: `100%` }}
         camera={{ position: [0, 0, 4], fov: 30 }}
       >
-        <ambientLight intensity={0.8} />
+        {/* <ambientLight intensity={0.8} /> */}
+        
         <OrbitControls
           enableZoom={false}
           enableRotate={true}
