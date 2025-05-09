@@ -9,14 +9,20 @@ Title: Earth
 
 import React from 'react'
 import { useGLTF } from '@react-three/drei'
+import { Canvas, useFrame } from "@react-three/fiber";
+
+const RotatingEarth = () => {
+  return <Earth />;
+};
+
 
 export default function Earth(props) {
   const { nodes, materials } = useGLTF('/earth.gltf')
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.Object_4.geometry} material={materials['Scene_-_Root']} scale={1.128} />
+      <mesh geometry={nodes.Object_4.geometry} material={materials['Scene_-_Root']} scale={1} />
     </group>
   )
 }
 
-useGLTF.preload('/earth.gltf')
+useGLTF.preload('./../../../public/earth.gltf')
