@@ -54,7 +54,7 @@ const Hero = () => {
             href="/"
           >
             <span className="block text-[16px] text-white bg-black rounded-full px-5 py-1 font-medium group-hover:bg-transparent transition duration-300">
-              Start A Project
+              Discover More
             </span>
           </a>
         </div>
