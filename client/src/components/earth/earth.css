@@ -1,2 +1,15 @@
 Canvas {
 }
+
+@keyframes scaleUp {
+    0% {
+      transform: scale(.4);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .animate-scale-up {
+    animation: scaleUp .8s ease-out forwards;
+  }

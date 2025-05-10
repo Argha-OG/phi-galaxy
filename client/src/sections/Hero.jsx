@@ -1,6 +1,6 @@
 import React from "react";
-import { useState, Suspense } from "react";
-import { createRoot, } from "react-dom/client";
+import { useState, Suspense, useEffect, useRef } from "react";
+import { createRoot } from "react-dom/client";
 
 import "./../components/earth/earth.css";
 
@@ -8,11 +8,33 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Environment, Stars } from "@react-three/drei";
 import Earth from "../components/earth/Earth.jsx";
 
-const Hero = () => {
-  return (
-    <section className="mx-auto w-screen max-w-screen-xl h-dvh overflow-hidden">
 
-      <h1 className="text-white absolute z-1  max-w-prose justify-center mt-[14%] ml-4">
+const Hero = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const canvasRef = useRef(null);
+
+  useEffect(() => {
+    // Trigger the animation after the component has mounted
+    setTimeout(() => {
+      setIsVisible(true);
+      if (canvasRef.current) {
+        // Apply a scale transform to the Canvas
+        canvasRef.current.style.transform = "scale(1)";
+        canvasRef.current.style.transition = "transform 0.8s ease-in-out";
+      }
+    }, 100); // You can adjust the delay if needed
+  }, []);
+
+  return (
+    <section className="mx-auto w-screen max-w-screen-xl h-dvh overflow-hidden flex">
+      <h1
+        className={`text-white z-1  max-w-prose justify-center mt-[14%] ml-4 
+        ${
+          isVisible ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
+        }
+            transition-transform duration-500 ease-in
+          `}
+      >
         <h1 class="text-4xl font-bold  text-gray-900 sm:text-5xl dark:text-white">
           Explore New Dimensions in Software with
         </h1>
@@ -38,23 +60,29 @@ const Hero = () => {
         </div>
       </h1>
 
-      <Canvas
-        style={{ width: `auto`, height: `100%` }}
-        camera={{ position: [0, 0, 4], fov: 30 }}
-      >
-        {/* <ambientLight intensity={0.8} /> */}
-        
-        <OrbitControls
-          enableZoom={false}
-          enableRotate={true}
-          enablePan={true}
-        />
-        <Suspense fallback={null}>
-          <Earth />
-        </Suspense>
-        <Environment preset="sunset" />
-        <Stars />
-      </Canvas>
+        <Canvas
+          style={{
+            width: `100%`,
+            height: `100%`,
+            transform: (3),
+          }}
+          camera={{ position: [0, 0, 5], fov: 30 }}
+          className="rounded-full"
+        >
+
+
+          <OrbitControls
+            ref={canvasRef}
+            enableZoom={false}
+            enableRotate={true}
+            enablePan={true}
+          />
+          <Suspense fallback={null}>
+            <Earth />
+          </Suspense>
+          <Environment preset="sunset" />
+          <Stars />
+        </Canvas>
     </section>
   );
 };
