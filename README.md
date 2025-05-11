@@ -1,2 +1,2 @@
 # phi-galaxy
-<a href="www.phigalaxy.com">Phi Galaxy</a>
+<a href="https://www.phigalaxy.com">Phi Galaxy</a>
