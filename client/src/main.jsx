@@ -16,6 +16,7 @@ import Constrauction from './pages/construction/Construction.jsx';
 
 
 const router = createBrowserRouter([
+  
   {
     path: "*",
     element: <Constrauction />,
