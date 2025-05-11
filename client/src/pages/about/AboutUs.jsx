@@ -14,7 +14,7 @@ import Busicon from "./../../assets/aboutpage/busicon.png";
 import Itcon from "./../../assets/aboutpage/itcon.png";
 
 
-
+import HTeam from "../../sections/HTeam";
 
 
 const AboutUs = () => {
@@ -174,6 +174,8 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+
+      <HTeam />
     </MainLayout>
   );
 };
