@@ -12,10 +12,14 @@ import Services from './pages/service/Services.jsx';
 import Blog from './pages/blog/Blog.jsx';
 import ContactUs from './pages/contact/ContactUs.jsx';
 import Loader from './components/loading/Loading.jsx';
+import Constrauction from './pages/construction/Construction.jsx';
 
 
 const router = createBrowserRouter([
-
+  {
+    path: "*",
+    element: <Constrauction />,
+  },
   {
     path: "/",
     element: <Home />,
