@@ -1,6 +1,6 @@
 import React from 'react'
 import HeroImg from './../../assets/biglogohere.png'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -8,69 +8,69 @@ const Header = () => {
       <div className="mx-auto container px-4 sm:px-6 lg:px-8 ">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">
-            <Link className="block" to="/">
-              <span className="sr-only">Home</span>
+            <NavLink className="block active:text-4xl" to="/">
+              <span className="sr-only ">Home</span>
               <img className="h-16 w-auto" src={HeroImg} alt="" />
-            </Link>
+            </NavLink>
           </div>
 
           <div className="md:flex md:items-center md:gap-12">
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-6 text-sm">
                 <li>
-                  <Link
+                  <NavLink
                     className="text-lg text-black  transition hover:text-purple-900 hover:text-shadow-purple-500 hover:text-shadow-lg/10"
                     to="/"
                   >
                     Home
-                  </Link>
+                  </NavLink>
                 </li>
 
                 <li>
-                  <Link
+                  <NavLink
                     className="text-lg text-black transition hover:text-purple-900 hover:text-shadow-purple-500 hover:text-shadow-lg/10"
                     to="/About"
                   >
                     About Us
-                  </Link>
+                  </NavLink>
                 </li>
 
                 <li>
-                  <Link
+                  <NavLink
                     className="text-lg text-black transition hover:text-purple-900 hover:text-shadow-purple-500 hover:text-shadow-lg/10"
                     to="/Services"
                   >
                     Services
-                  </Link>
+                  </NavLink>
                 </li>
 
                 <li>
-                  <Link
+                  <NavLink
                     className="text-lg text-black transition hover:text-purple-900 hover:text-shadow-purple-500 hover:text-shadow-lg/10"
                     to="/Blog"
                   >
                     Blog
-                  </Link>
+                  </NavLink>
                 </li>
 
                 <li>
-                  <Link
+                  <NavLink
                     className="text-lg text-black transition hover:text-purple-900 hover:text-shadow-purple-500 hover:text-shadow-lg/10"
                     to="/Contact"
                   >
                     Contact Us
-                  </Link>
+                  </NavLink>
                 </li>
 
                 <div>
-                  <Link
+                  <NavLink
                     className="group inline-block rounded-full bg-gradient-to-r from-purple-700 to-blue-500 p-[2px] hover:text-white focus:outline-hidden"
                     to="#"
                   >
                     <span className="block text-[16px] rounded-full bg-white px-5 py-1 font-medium group-hover:bg-transparent transition duration-300">
                       Start A Project
                     </span>
-                  </Link>
+                  </NavLink>
                 </div>
               </ul>
             </nav>

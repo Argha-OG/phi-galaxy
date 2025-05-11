@@ -1,10 +1,11 @@
 import React from "react";
 import MainLayout from "../../Layout/MainLayout";
+import Bread from "../../components/breadcrumb/Bread";
 
 const ContactUs = () => {
   return (
     <MainLayout>
-        <h1>Contact Us</h1>
+      <Bread>Contact Us</Bread>
       </ MainLayout >
   );
 };
